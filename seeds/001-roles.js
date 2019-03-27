@@ -12,3 +12,6 @@ exports.seed = function(knex, Promise) {
       ]);
     });
 };
+
+// Commands for knex
+// npx knex seed:run
