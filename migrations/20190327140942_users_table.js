@@ -24,10 +24,3 @@ exports.up = function(knex) {
 exports.down = function(knex) {
   return knex.schema.dropTableIfExists("users");
 };
-
-// STEPS
-
-// npx knex init => creates a migrations folder
-// npx knex migrate:make users_table => creates a new table
-// npx knex migrate:latest => runs the latest migration of the database
-// npx knex migrate:rollback => undo last changes you made to the database
