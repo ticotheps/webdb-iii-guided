@@ -13,5 +13,7 @@ exports.seed = function(knex, Promise) {
     });
 };
 
-// Commands for knex
+// Seed Commands for knex
+
+// npx knex seed:make 001-roles
 // npx knex seed:run

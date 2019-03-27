@@ -20,5 +20,5 @@ exports.down = function(knex) {
 
 // npx knex init => creates a knexfile.js file
 // npx knex migrate:make roles_table => creates a new table
-// npx knex migrate:latest => runs the latest migration of the database
+// npx knex migrate:latest => Run all migrations that have not yet been run
 // npx knex migrate:rollback => undo last changes you made to the database
