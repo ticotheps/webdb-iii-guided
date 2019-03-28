@@ -22,7 +22,7 @@ exports.up = function(knex, Promise) {
           .notNullable()
           .references('id')
           .inTable('tracks')
-          .onDelete('RESTRICT') // This means: MANUALLY, in your code, first delete all the cohorts for the track, THEN delete the track.
+          .onDelete('CASCADE') // This means: MANUALLY, in your code, first delete all the cohorts for the track, THEN delete the track.
           .onUpdate('CASCADE');
       })
       .createTable('students', tbl => {
@@ -38,7 +38,7 @@ exports.up = function(knex, Promise) {
           .notNullable()
           .references('id')
           .inTable('cohorts')
-          .onDelete('RESTRICT')
+          .onDelete('CASCADE')
           .onUpdate('CASCADE');
         tbl
           .integer('student_id')
@@ -46,7 +46,7 @@ exports.up = function(knex, Promise) {
           .notNullable()
           .references('id')
           .inTable('students')
-          .onDelete('RESTRICT')
+          .onDelete('CASCADE')
           .onUpdate('CASCADE');
       });
   };
