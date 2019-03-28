@@ -9,7 +9,7 @@ function find() {
     return db('roles');
 }
 
-function findById() {
+function findById(id) {
     return db('roles')
         .where({ id })
         .first();
