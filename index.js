@@ -37,9 +37,10 @@ server.get('/api/roles', async (req, res) => {
 server.get('/api/roles/:id', async (req, res) => {
   // get the roles from the database
   try {
-    const role = await db('roles')
-      .where({ id: req.params.id })
-      .first();
+    const role = await Roles.findById(req.params.id);
+      // CODE BELOW IS NO LONGER NEEDED AFTER DAY 4 LECTURE
+      // .where({ id: req.params.id })
+      // .first();
     res.status(200).json(role);
   } catch (error) {
     res.status(500).json(error);
