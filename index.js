@@ -1,8 +1,11 @@
 // Manage Roles (id, name)
 const express = require('express');
 const helmet = require('helmet');
-const knex = require('knex');
 
+// KNEX IS NO LONGER NEEDED HERE B/C IT WAS MOVED INTO dbConfig.js
+// const knex = require('knex');
+
+// THIS CODE BELOW IS NO LONGER NEEDED
 // const knexConfig = {
 //   client: 'sqlite3',
 //   connection: {
