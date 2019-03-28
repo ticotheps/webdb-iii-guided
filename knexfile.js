@@ -31,3 +31,4 @@ module.exports = {
 // Day 4, Step 7: Fill out 000-cleanup.js file and revise 001-roles.js file.
 // Day 4, Step 8: Create MORE seed data for: 002-tracks, 003-cohorts, 004-students, 005-cohort_students using the 'npx knex seed:make ' command.
 // Day 4, Step 9: Run 'npx knex migrate:latest'.
+// Day 4, Step 10: Create a new file called 'dbConfig.js' and import the 'knexfile.js' file into it with 'const knexConfig = require('../knexfile.js');
