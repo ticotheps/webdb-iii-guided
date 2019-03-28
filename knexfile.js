@@ -7,13 +7,13 @@ module.exports = {
       filename: './data/rolex.db3',
     },
     useNullAsDefault: true, // needed for sqlite
+    migrations: {
+      directory: './data/migrations'
+    },
+    seeds: {
+      directory: './data/seeds'
+    }
   },
-  migrations: {
-    directory: './data/migrations'
-  },
-  seeds: {
-    directory: './data/seeds'
-  }
 };
 
 // Day 4, Step 1: Add a 'migrations' object and a 'seeds' object to the export statement.
