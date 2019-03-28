@@ -19,6 +19,7 @@ exports.up = function(knex, Promise) {
         tbl
           .integer('track_id')
           .unsigned()
+          .notNullable()
           .references('id')
           .inTable('tracks')
           .onDelete('CASCADE') // explain how cascading works
@@ -34,6 +35,7 @@ exports.up = function(knex, Promise) {
         tbl
           .integer('cohort_id')
           .unsigned()
+          .notNullable()
           .references('id')
           .inTable('cohorts')
           .onDelete('CASCADE')
@@ -41,6 +43,7 @@ exports.up = function(knex, Promise) {
         tbl
           .integer('student_id')
           .unsigned()
+          .notNullable()
           .references('id')
           .inTable('students')
           .onDelete('CASCADE')
