@@ -28,3 +28,5 @@ module.exports = {
 // Day 4, Step 4: Create a 'pool' object in the export statement of the 'knexfile.js' file.
 // Day 4, Step 5: Run 'yarn add knex-cleaner --dev' to install this npm module.
 // Day 4, Step 6: Create seed data using 'npx knex seed:make 000-cleanup' command in the terminal.
+// Day 4, Step 7: Fill out 000-cleanup.js file and revise 001-roles.js file.
+// Day 4, Step 8: Create MORE seed data for: 002-tracks, 003-cohorts, 004-students, 005-cohort_students using the 'npx knex seed:make ' command.
