@@ -30,3 +30,4 @@ module.exports = {
 // Day 4, Step 6: Create seed data using 'npx knex seed:make 000-cleanup' command in the terminal.
 // Day 4, Step 7: Fill out 000-cleanup.js file and revise 001-roles.js file.
 // Day 4, Step 8: Create MORE seed data for: 002-tracks, 003-cohorts, 004-students, 005-cohort_students using the 'npx knex seed:make ' command.
+// Day 4, Step 9: Run 'npx knex migrate:latest'.
