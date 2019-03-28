@@ -17,11 +17,14 @@ module.exports = {
     pool: {
       afterCreate: (conn, done) => {
         conn.run('PRAGMA foreign_keys = ON', done);
-      }
-    }
+      },
+    },
   },
 };
 
 // Day 4, Step 1: Add a 'migrations' object and a 'seeds' object to the export statement.
 // Day 4, Step 2: Run 'npx knex migrate:make lambda_tables'
 // Day 4, Step 3: Create multiple tables in one migration inside new migration file.
+// Day 4, Step 4: Create a 'pool' object in the export statement of the 'knexfile.js' file.
+// Day 4, Step 5: Run 'yarn add knex-cleaner --dev' to install this npm module.
+// Day 4, Step 6: Create seed data using 'npx knex seed:make 000-cleanup' command in the terminal.
